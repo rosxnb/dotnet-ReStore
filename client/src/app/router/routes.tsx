@@ -1,7 +1,10 @@
+import { Check } from "@mui/icons-material";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import AboutPage from "../../features/about/AboutPage";
+import BasketPage from "../../features/basket/BasketPage";
 import Catalog from "../../features/Catalog/Catalog";
 import ProductDetails from "../../features/Catalog/ProductDetails";
+import CheckoutPage from "../../features/checkout/CheckoutPage";
 import ContactPage from "../../features/contact/ContactPage";
 import HomePage from "../../features/Home/HomePage";
 import NotFound from "../errors/NotFound";
@@ -19,6 +22,8 @@ export const router = createBrowserRouter([
             {path: 'about', element: <AboutPage />},
             {path: 'contact', element: <ContactPage />},
             {path: 'server-error', element: <ServerError />},
+            {path: 'basket', element: <BasketPage />},
+            {path: 'checkout', element: <CheckoutPage />},
             {path: 'not-found', element: <NotFound />},
             {path: '*', element: <Navigate replace to="/not-found" />},
         ]

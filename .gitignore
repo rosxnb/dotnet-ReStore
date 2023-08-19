@@ -478,7 +478,7 @@ $RECYCLE.BIN/
 
 
 # Manual ignore
-API/Data/Migrations/
+# API/Data/Migrations/
 API/Store.db-*
 API/appsettings.json
 Assests/
